@@ -8,7 +8,7 @@ namespace SpaceInvaders
 {
     class PlayerShipFactory : GameObjectFactory
     {
-        public PlayerShipFactory(GameSettings gameSettings) 
+        public PlayerShipFactory(GameSettings gameSettings)
             : base(gameSettings)
         {
         }
@@ -16,7 +16,7 @@ namespace SpaceInvaders
         public override GameObject GetGameObject(Vector2 position)
         {
             GameObject playerShip = new PlayerShip() { GameObjectTexture = GameSettings.PlayerShip, Position = position, GameObjectType = GameObjectType.PlayerShip };
-            
+
             return playerShip;
         }
 

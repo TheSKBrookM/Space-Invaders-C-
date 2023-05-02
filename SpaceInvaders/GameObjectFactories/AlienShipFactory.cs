@@ -21,7 +21,7 @@ namespace SpaceInvaders
         public override GameObject GetGameObject(Vector2 position)
         {
             GameObject alienShip = new AlienShip() { GameObjectTexture = GameSettings.AlienShip, Position = position, GameObjectType = GameObjectType.AlienShip };
-            
+
             return alienShip;
         }
 

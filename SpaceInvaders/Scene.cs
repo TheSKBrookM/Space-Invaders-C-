@@ -21,7 +21,7 @@ namespace SpaceInvaders
 
         private Scene()
         {
-            
+
         }
 
         private Scene(GameSettings gameSettings)

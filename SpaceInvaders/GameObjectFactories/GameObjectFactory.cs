@@ -11,7 +11,7 @@ namespace SpaceInvaders
         public GameSettings GameSettings { get; set; }
 
         public abstract GameObject GetGameObject(Vector2 position);
-        
+
         public GameObjectFactory(GameSettings gameSettings)
         {
             GameSettings = gameSettings;

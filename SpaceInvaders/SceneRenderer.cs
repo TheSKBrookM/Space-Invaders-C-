@@ -19,15 +19,14 @@ namespace SpaceInvaders
             screenHeight = gameSettings.ConsoleHeight;
             screenMatrix = new char[gameSettings.ConsoleHeight, gameSettings.ConsoleWidth];
 
-            Console.WindowHeight = gameSettings.ConsoleHeight;
-            Console.WindowWidth = gameSettings.ConsoleWidth;
-            Console.SetBufferSize(screenWidth, screenHeight);
+            Console.SetWindowSize(gameSettings.ConsoleWidth, gameSettings.ConsoleHeight);
+            Console.SetBufferSize(gameSettings.ConsoleWidth, gameSettings.ConsoleHeight);
 
             Console.CursorVisible = false;
             SetCursorZero();
         }
 
-        public void Render(Scene scene) 
+        public void Render(Scene scene)
         {
             SetCursorZero();
 
@@ -41,7 +40,7 @@ namespace SpaceInvaders
 
             for (int y = 0; y < screenHeight; y++)
             {
-                for (int x = 0; x < screenWidth; x++) 
+                for (int x = 0; x < screenWidth; x++)
                 {
                     stringBuilder.Append(screenMatrix[y, x]);
                 }
@@ -61,13 +60,13 @@ namespace SpaceInvaders
             }
             else
             {
-              // screenMatrix[gameObject.Position.Y, gameObject.Position.X] = ' ';
+                // screenMatrix[gameObject.Position.Y, gameObject.Position.X] = ' ';
             }
         }
 
         public void AddListForRenderer(List<GameObject> gameObjects)
         {
-            foreach (GameObject gameObject in gameObjects) 
+            foreach (GameObject gameObject in gameObjects)
             {
                 AddGameObjectForRenderer(gameObject);
             }
@@ -81,7 +80,7 @@ namespace SpaceInvaders
             {
                 for (int x = 0; x < screenWidth; x++)
                 {
-                    stringBuilder.Append(' ' );
+                    stringBuilder.Append(' ');
                 }
                 stringBuilder.Append(Environment.NewLine);
             }

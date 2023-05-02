@@ -15,7 +15,7 @@ namespace SpaceInvaders
         // Swarm settings
         public int NumberOfSwarmRows { get; set; } = 2;
         public int NumberOfSwarmCollumns { get; set; } = 60;
-        public Vector2 SwarmStartCoordinates { get; set; } = new Vector2() { X = 10, Y = 2};
+        public Vector2 SwarmStartCoordinates { get; set; } = new Vector2() { X = 10, Y = 2 };
         public char AlienShip { get; set; } = 'O';
         public int SwarmSpeed { get; set; } = 20;
 

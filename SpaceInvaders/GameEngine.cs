@@ -20,13 +20,13 @@ namespace SpaceInvaders
 
         private GameEngine()
         {
-            
+
         }
 
         public static GameEngine GetGameEngine(GameSettings gameSettings)
         {
-            if (gameEngine == null) 
-            { 
+            if (gameEngine == null)
+            {
                 gameEngine = new GameEngine(gameSettings);
             }
             return gameEngine;
